@@ -1,4 +1,4 @@
-reactjs-topcoat
+reactjs-topui
 ===============
 
 [Topcoat.io][1] components using [ReactJs][2]
