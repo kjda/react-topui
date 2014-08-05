@@ -4,7 +4,7 @@ reactjs-topcoat
 [Topcoat.io][1] components using [ReactJs][2]
 
 ```
-var UI = require('reactjs-topcoat');
+var UI = require('react-topui');
 ```
 
 
