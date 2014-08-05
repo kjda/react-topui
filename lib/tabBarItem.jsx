@@ -15,11 +15,11 @@ module.exports = React.createClass({
 			'full': this.props.full
 		});
 
-		
+		var button = this.transferPropsTo(<button className={classSet}>{this.props.children}</button>); 
 		return (
 			<label className="topcoat-tab-bar__item">
     			<input type="radio" name={this.props.name} />
-    			<button className={classSet}>{this.props.children}</button>
+    			{button}
   			</label>
 		);
 	}
