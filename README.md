@@ -5,9 +5,7 @@ reactjs-topui
 
 Installation
 ============
-```
-$ npm install react-topui --save
-```
+
 You need to manually install topcoat css & [Topcoat Icons][3] css
 
 Usage
