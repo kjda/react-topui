@@ -1,4 +1,4 @@
 reactjs-topcoat
 ===============
 
-Topcoat components using reactjs
+Topcoat.io components using reactjs
