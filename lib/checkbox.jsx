@@ -2,6 +2,8 @@
 var React = require('react/addons');
 module.exports = React.createClass({
 	
+	displayName: 'Checkbox',
+
 	getDefaultProps: function(){
 		return {
 			label: null
@@ -22,4 +24,5 @@ module.exports = React.createClass({
 			</label>
 		);
 	}
+
 });

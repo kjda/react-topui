@@ -2,6 +2,8 @@
 var React = require('react/addons');
 module.exports = React.createClass({
 	
+	displayName: 'List',
+
 	render: function(){
 		return this.transferPropsTo(
 			<div className='topcoat-list'>

@@ -2,6 +2,8 @@
 var React = require('react/addons');
 module.exports = React.createClass({
 	
+	displayName: 'NavBarTitle',
+
 	render: function(){
 		var title = this.props.title || this.props.children;
 		return this.transferPropsTo(

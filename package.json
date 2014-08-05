@@ -1,14 +1,14 @@
 {
-  "name": "reactjs-topcoat",
-  "version": "0.0.0",
+  "name": "react-topui",
+  "version": "0.0.1",
   "description": "Topcoat components using reactjs",
   "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: Tests comming soon\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/kjda/reactjs-topcoat.git"
+    "url": "https://github.com/kjda/react-topui.git"
   },
   "keywords": [
     "Topcoat",
@@ -17,7 +17,7 @@
   "author": "Khaled Jouda",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kjda/reactjs-topcoat/issues"
+    "url": "https://github.com/kjda/react-topui/issues"
   },
-  "homepage": "https://github.com/kjda/reactjs-topcoat"
+  "homepage": "https://github.com/kjda/react-topui"
 }

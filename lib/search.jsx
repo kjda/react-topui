@@ -2,6 +2,8 @@
 var React = require('react/addons');
 module.exports = React.createClass({
 	
+	displayName: 'Search',
+
 	getDefaultProps: function(){
 		return {
 			large: false,

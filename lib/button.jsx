@@ -2,6 +2,8 @@
 var React = require('react/addons');
 module.exports = React.createClass({
 	
+	displayName: 'Button',
+	
 	getDefaultProps: function(){
 		return {
 			quiet: false,

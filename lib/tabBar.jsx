@@ -2,6 +2,8 @@
 var React = require('react/addons');
 module.exports = React.createClass({
 	
+	displayName: 'TabBar',
+
 	getDefaultProps: function(){
 		return {
 			full: false

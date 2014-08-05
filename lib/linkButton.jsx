@@ -4,6 +4,8 @@ var Button = require('./button');
 
 module.exports = React.createClass({
 	
+	displayName: 'LinkButton',
+
 	nav: function(){
 		window.location.href = this.props.href;
 		return false;
