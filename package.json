@@ -1,0 +1,23 @@
+{
+  "name": "reactjs-topcoat",
+  "version": "0.0.0",
+  "description": "Topcoat components using reactjs",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kjda/reactjs-topcoat.git"
+  },
+  "keywords": [
+    "Topcoat",
+    "ReactJs"
+  ],
+  "author": "Khaled Jouda",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kjda/reactjs-topcoat/issues"
+  },
+  "homepage": "https://github.com/kjda/reactjs-topcoat"
+}
