@@ -21,9 +21,10 @@
   },
   "homepage": "https://github.com/kjda/react-topui",
   "dependencies": {
-    "react-topui": "git+https://github.com/kjda/react-topui.git"
+    
   },
   "devDependencies": {
-    
+    "jsx-loader": "^0.11.0",
+    "webpack": "^1.3.3-beta1"
   }
 }
