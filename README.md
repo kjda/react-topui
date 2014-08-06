@@ -21,27 +21,27 @@ Button
 
 default
 ```
-<UI.Button>Default button</Ui.Button>
+<UI.Button>Default button</UI.Button>
 ```
 
 full-width
 ```
-<UI.Button full>Default button</Ui.Button>
+<UI.Button full>Default button</UI.Button>
 ```
 
 call to action
 ```
-<UI.Button cta>Call to action button</Ui.Button>
+<UI.Button cta>Call to action button</UI.Button>
 ```
 
 Quit
 ```
-<UI.Button quiet>Quiet button</Ui.Button>
+<UI.Button quiet>Quiet button</UI.Button>
 ```
 
 Large
 ```
-<UI.Button large>Large button</Ui.Button>
+<UI.Button large>Large button</UI.Button>
 ```
 
 Icon Button
@@ -50,14 +50,14 @@ Icon Button
 <UI.IconButton>
   <UI.Icon name="home" />
   Default button
-</Ui.IconButton>
+</UI.IconButton>
 ```
 
 ```
 <UI.IconButton quiet large full>
   <UI.Icon name="home" />
   Default button
-</Ui.IconButton>
+</UI.IconButton>
 ```
 
 Link Button
@@ -74,16 +74,16 @@ Button Bar
 <UI.ButtonBar>
   <UI.ButtonBarItem>Button 1</UI.ButtonBarItem>
   <UI.ButtonBarItem>Button 2</UI.ButtonBarItem>
-</Ui.ButtonBar>
+</UI.ButtonBar>
 ```
 
 Large & Full-width Button Bar 
 
 ```
 <UI.ButtonBar full large>
-  <UI.ButtonBarItem full>Button 1</UI.ButtonBarItem>
+  <UI.ButtonBarItem full large>Button 1</UI.ButtonBarItem>
   <UI.ButtonBarItem full large>Button 2</UI.ButtonBarItem>
-</Ui.ButtonBar>
+</UI.ButtonBar>
 ```
 
 List
