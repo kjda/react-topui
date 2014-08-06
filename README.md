@@ -81,7 +81,7 @@ Large & Full-width Button Bar
 
 ```
 <UI.ButtonBar full large>
-  <UI.ButtonBarItem full>Button 1</UI.ButtonBarItem>
+  <UI.ButtonBarItem full large>Button 1</UI.ButtonBarItem>
   <UI.ButtonBarItem full large>Button 2</UI.ButtonBarItem>
 </UI.ButtonBar>
 ```
