@@ -2,7 +2,7 @@
   "name": "react-topui",
   "version": "0.0.1",
   "description": "Topcoat components using reactjs",
-  "main": "lib/index.js",
+  "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: Tests comming soon\" && exit 1"
   },
@@ -19,5 +19,12 @@
   "bugs": {
     "url": "https://github.com/kjda/react-topui/issues"
   },
-  "homepage": "https://github.com/kjda/react-topui"
+  "homepage": "https://github.com/kjda/react-topui",
+  "dependencies": {
+    "react-topui": "git+https://github.com/kjda/react-topui.git"
+  },
+  "devDependencies": {
+    "jsx-loader": "^0.11.0",
+    "webpack": "^1.3.3-beta1"
+  }
 }

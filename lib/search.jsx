@@ -11,7 +11,6 @@ module.exports = React.createClass({
 		};
 	},
 
-
 	render: function(){
 		
 		var classSet = React.addons.classSet({
