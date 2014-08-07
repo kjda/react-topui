@@ -3,10 +3,10 @@ reactjs-topui
 
 [Topcoat.io][1] components using [ReactJs][2]
 
-Installation
+Demo & Docs
 ============
 
-You need to manually install topcoat css & [Topcoat Icons][3] css
+[http://kjda.github.io/react-topui/][3]
 
 Usage
 =====
@@ -268,4 +268,4 @@ Icon
 
 [1]: http://topcoat.io/
 [2]: https://github.com/facebook/react
-[3]: https://github.com/kjda/topcoat-icons
+[3]: http://kjda.github.io/react-topui/
