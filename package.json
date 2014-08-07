@@ -1,6 +1,6 @@
 {
   "name": "react-topui",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Topcoat components using reactjs",
   "main": "dist/index.js",
   "scripts": {
