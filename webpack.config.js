@@ -24,10 +24,15 @@ module.exports = {
         ]    
     },
     externals: {
-        'react': true
+        react: {
+            root: 'React',
+            commonjs: 'react',
+            commonjs2: 'react',
+            amd: 'react'
+        }
     },
 
     plugins: [
-    new UglifyJsPlugin()
+    //new UglifyJsPlugin()
     ]
 };
