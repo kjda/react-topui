@@ -27,8 +27,7 @@ module.exports = {
         ]    
     },
     externals: {
-        'react': true,
-        'react/addons': true
+        'react': 'React'
     },
     plugins: [
         new UglifyJsPlugin()
