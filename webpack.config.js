@@ -8,9 +8,7 @@ module.exports = {
     //devtool: 'source-map',
     context: __dirname + '/lib/',
     watch: true,
-    entry: [
-    __dirname + '/lib/index.jsx'    
-    ],
+    entry: './index.jsx',
     output: {
         path: __dirname + '/dist/',
         filename: 'index.js',
