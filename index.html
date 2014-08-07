@@ -8,12 +8,153 @@
 
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
     <link rel="stylesheet" type="text/css" media="screen" href="bower_components/topcoat/css/topcoat-mobile-dark.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="topcoat-icons/css/icomatic.css">
 
     <script src="http://fb.me/react-0.11.1.js"></script>
     <script src="http://fb.me/JSXTransformer-0.11.1.js"></script>
     <script src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
     <script src="javascripts/main.js"></script>
-    <title>React-topui</title>
+    <title>React-topui: React-Topcoat components library</title>
+    <script type="text/jsx">
+/** @jsx React.DOM */
+window.onload= function(){
+  var UI = TopUI;
+  var Example = React.createClass({
+
+    render: function(){
+      return(
+        <div>
+        <UI.Button>Default button</UI.Button>
+        <hr />
+        <UI.Button full>Default full button</UI.Button>
+        <hr />
+        <UI.Button cta>Call to action button</UI.Button>
+        <hr />
+        <UI.Button quiet>Quiet button</UI.Button>
+        <hr />
+        <UI.Button large>Large button</UI.Button>
+        <hr />
+        <UI.IconButton><UI.Icon name="home" />Icon button</UI.IconButton>
+        <hr />
+        <UI.IconButton large><UI.Icon name="home" />Large icon button</UI.IconButton>
+        <hr />
+        <UI.LinkButton cta large href="//github.com">github.com</UI.LinkButton>
+        <hr />
+        <UI.ButtonBar>
+          <UI.ButtonBarItem>ButtonBar 1</UI.ButtonBarItem>
+          <UI.ButtonBarItem>ButtonBar 2</UI.ButtonBarItem>
+        </UI.ButtonBar>
+        <hr />
+        <UI.ButtonBar full large>
+          <UI.ButtonBarItem full large>Large Full ButtonBar </UI.ButtonBarItem>
+          <UI.ButtonBarItem full large>Button 2</UI.ButtonBarItem>
+        </UI.ButtonBar>
+        <hr />
+          <UI.List>
+            <UI.ListHeader>
+            List Header
+            </UI.ListHeader>
+            <UI.ListContainer>
+              <UI.ListItem>
+                <a href="#1">LINK1</a>
+              </UI.ListItem>
+              <UI.ListItem>
+                <a href="#2">LINK2</a>
+              </UI.ListItem>
+              <UI.ListItem>
+                Lorem
+              </UI.ListItem>
+            </UI.ListContainer>
+          </UI.List>
+          <hr />
+          <UI.NavBar>
+            <UI.NavBarItem left quarter>
+              <UI.Icon name="listview" />
+            </UI.NavBarItem>
+            <UI.NavBarItem center half>
+              NAV BAR
+            </UI.NavBarItem>
+            <UI.NavBarItem right quarter>
+              <UI.Icon name="back" />
+            </UI.NavBarItem>
+          </UI.NavBar>
+
+          <hr />
+          <UI.TabBar>
+            <UI.TabBarItem>
+              TabBar
+            </UI.TabBarItem>
+            <UI.TabBarItem>
+             Second
+            </UI.TabBarItem>
+          </UI.TabBar>
+          <hr />
+          <UI.TabBar full>
+            <UI.TabBarItem full>
+              FullWidth TabBar
+            </UI.TabBarItem>
+            <UI.TabBarItem full>
+             Second
+            </UI.TabBarItem>
+          </UI.TabBar>
+          <hr />
+          <UI.TextInput placeholder="TopUI.textInput" />
+          <hr />
+          <UI.TextInput large placeholder="TopUI.textInput large" />
+          <hr />
+          <UI.TextInput full placeholder="TopUI.textInput full" />
+          <hr />
+          <UI.TextInput name="username" disabled placeholder="TopUI.textInput disabled" />
+          <hr />
+          <UI.Textarea placeholder="Textarea" />
+          <hr />
+          <UI.Textarea large placeholder="Textarea large" />
+          <hr />
+          <UI.Textarea full placeholder="Textarea full" />
+          <hr />
+          <UI.Search placeholder="Search" />
+          <hr />
+          <UI.Search large placeholder="Search large" />
+          <hr />
+          <UI.Search full placeholder="Search full" />
+          <hr />
+          <UI.Search disabled placeholder="Search disabled" />
+          <hr />
+          <UI.Switch />
+          <hr />
+          <UI.Checkbox label="Checkboc label" />
+           <hr />
+          <UI.Checkbox checked />
+          <hr />
+          <UI.Checkbox disabled />
+          <hr />
+          <UI.Radio name="myname" />
+          <hr />
+          <UI.Radio left label="This label goes left" />
+          <hr />
+          <UI.Radio right label="This label goes right" />
+          <hr />
+          <UI.Radio disabled />
+          <hr />
+          <UI.Notification value="10 new Msgs" />
+          <hr />
+          <UI.Range />
+          <hr />
+          <UI.Range disabled />
+          <hr />
+          <UI.Icon name="like" />
+          <UI.Icon name="like" style={{color: 'red', fontSize: '80px'}} />
+          <UI.Icon name="like" />
+
+        </div>
+      );
+    }
+  });
+  React.renderComponent(
+    new Example(), 
+    document.getElementById('example'));
+}
+</script>
   </head>
 
   <body>
@@ -42,27 +183,34 @@
 <p><a href="http://topcoat.io/">Topcoat.io</a> components using <a href="https://github.com/facebook/react">ReactJs</a></p>
 
 <h1>
-<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h1>
+<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation & Usage</h1>
 
 <p>You need to manually install topcoat css &amp; <a href="https://github.com/kjda/topcoat-icons">Topcoat Icons</a> css</p>
 
-<h1>
-<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h1>
-
-<pre><code>var UI = require('react-topui');
+<br />
+<h2>Node</h2>
+<pre> <code>npm install react-topui</code></pre>
+<br />
+<pre><code>
+var UI = require('react-topui');
 </code></pre>
 
-<h1>
-<a name="button" class="anchor" href="#button"><span class="octicon octicon-link"></span></a>Button</h1>
+<br />
+<h2>Browser</h2>
+<pre> <code>&lt;script type="text/javascript" src="path/to/dist/index.js"&gt;&lt;/script&gt;</code></pre>
+<br />
+It will be available under <b>window.TopUI</b> if you don't require it as a RequireJS/CommonJS module
+
+<h2>Example</h2>
+
+<div id="example"></div>
+
+<h2>Components</h2>
+<h3>
+<a name="button" class="anchor" href="#button"><span class="octicon octicon-link"></span></a>Button</h3>
 
 <p>default</p>
-<div id="button1">
-</div>
-<script type="text/jsx">
-/** @jsx React.DOM */
-window.onload= function(){
-React.renderComponent(<ReactTopui.Button>Default button</ReactTopui.Button>, document.getElementById('button1'));}
-</script>
+
 
 <pre><code>&lt;UI.Button&gt;Default button&lt;/UI.Button&gt;
 </code></pre>
@@ -87,8 +235,8 @@ React.renderComponent(<ReactTopui.Button>Default button</ReactTopui.Button>, doc
 <pre><code>&lt;UI.Button large&gt;Large button&lt;/UI.Button&gt;
 </code></pre>
 
-<h1>
-<a name="icon-button" class="anchor" href="#icon-button"><span class="octicon octicon-link"></span></a>Icon Button</h1>
+<h3>
+<a name="icon-button" class="anchor" href="#icon-button"><span class="octicon octicon-link"></span></a>Icon Button</h3>
 
 <pre><code>&lt;UI.IconButton&gt;
   &lt;UI.Icon name="home" /&gt;
@@ -102,16 +250,16 @@ React.renderComponent(<ReactTopui.Button>Default button</ReactTopui.Button>, doc
 &lt;/UI.IconButton&gt;
 </code></pre>
 
-<h1>
-<a name="link-button" class="anchor" href="#link-button"><span class="octicon octicon-link"></span></a>Link Button</h1>
+<h3>
+<a name="link-button" class="anchor" href="#link-button"><span class="octicon octicon-link"></span></a>Link Button</h3>
 
 <pre><code>&lt;UI.LinkButton cta large href="#home"&gt;
 Home
 &lt;/UI.LinkButton&gt;
 </code></pre>
 
-<h1>
-<a name="button-bar" class="anchor" href="#button-bar"><span class="octicon octicon-link"></span></a>Button Bar</h1>
+<h3>
+<a name="button-bar" class="anchor" href="#button-bar"><span class="octicon octicon-link"></span></a>Button Bar</h3>
 
 <pre><code>&lt;UI.ButtonBar&gt;
   &lt;UI.ButtonBarItem&gt;Button 1&lt;/UI.ButtonBarItem&gt;
@@ -127,8 +275,8 @@ Home
 &lt;/UI.ButtonBar&gt;
 </code></pre>
 
-<h1>
-<a name="list" class="anchor" href="#list"><span class="octicon octicon-link"></span></a>List</h1>
+<h3>
+<a name="list" class="anchor" href="#list"><span class="octicon octicon-link"></span></a>List</h3>
 
 <pre><code>&lt;UI.List&gt;
   &lt;UI.ListHeader&gt;
@@ -148,8 +296,8 @@ Home
 &lt;/UI.List&gt;
 </code></pre>
 
-<h1>
-<a name="nav-bar" class="anchor" href="#nav-bar"><span class="octicon octicon-link"></span></a>Nav Bar</h1>
+<h3>
+<a name="nav-bar" class="anchor" href="#nav-bar"><span class="octicon octicon-link"></span></a>Nav Bar</h3>
 
 <pre><code>&lt;UI.NavBar&gt;
   &lt;UI.NavBarItem left quarter&gt;
@@ -164,8 +312,8 @@ Home
 &lt;/UI.NavBar&gt;
 </code></pre>
 
-<h1>
-<a name="tab-bar" class="anchor" href="#tab-bar"><span class="octicon octicon-link"></span></a>Tab Bar</h1>
+<h3>
+<a name="tab-bar" class="anchor" href="#tab-bar"><span class="octicon octicon-link"></span></a>Tab Bar</h3>
 
 <pre><code>&lt;UI.TabBar&gt;
   &lt;UI.TabBarItem&gt;
@@ -189,8 +337,8 @@ Home
 &lt;/UI.TabBar&gt;
 </code></pre>
 
-<h1>
-<a name="text-input" class="anchor" href="#text-input"><span class="octicon octicon-link"></span></a>Text Input</h1>
+<h3>
+<a name="text-input" class="anchor" href="#text-input"><span class="octicon octicon-link"></span></a>Text Input</h3>
 
 <pre><code>&lt;UI.TextInput /&gt;
 </code></pre>
@@ -204,8 +352,8 @@ Home
 <pre><code>&lt;UI.TextInput name="username" disabled /&gt;
 </code></pre>
 
-<h1>
-<a name="textarea-input" class="anchor" href="#textarea-input"><span class="octicon octicon-link"></span></a>Textarea Input</h1>
+<h3>
+<a name="textarea-input" class="anchor" href="#textarea-input"><span class="octicon octicon-link"></span></a>Textarea Input</h3>
 
 <pre><code>&lt;UI.Textarea /&gt;
 </code></pre>
@@ -216,8 +364,8 @@ Home
 <pre><code>&lt;UI.Textarea full /&gt;
 </code></pre>
 
-<h1>
-<a name="search-input" class="anchor" href="#search-input"><span class="octicon octicon-link"></span></a>Search Input</h1>
+<h3>
+<a name="search-input" class="anchor" href="#search-input"><span class="octicon octicon-link"></span></a>Search Input</h3>
 
 <pre><code>&lt;UI.Search /&gt;
 </code></pre>
@@ -231,14 +379,14 @@ Home
 <pre><code>&lt;UI.Search disabled /&gt;
 </code></pre>
 
-<h1>
-<a name="switch" class="anchor" href="#switch"><span class="octicon octicon-link"></span></a>Switch</h1>
+<h3>
+<a name="switch" class="anchor" href="#switch"><span class="octicon octicon-link"></span></a>Switch</h3>
 
 <pre><code>&lt;UI.Switch /&gt;
 </code></pre>
 
-<h1>
-<a name="checkbox" class="anchor" href="#checkbox"><span class="octicon octicon-link"></span></a>Checkbox</h1>
+<h3>
+<a name="checkbox" class="anchor" href="#checkbox"><span class="octicon octicon-link"></span></a>Checkbox</h3>
 
 <pre><code>&lt;UI.Checkbox label="Checkboc label" /&gt;
 </code></pre>
@@ -249,8 +397,8 @@ Home
 <pre><code>&lt;UI.Checkbox disabled /&gt;
 </code></pre>
 
-<h1>
-<a name="radio" class="anchor" href="#radio"><span class="octicon octicon-link"></span></a>Radio</h1>
+<h3>
+<a name="radio" class="anchor" href="#radio"><span class="octicon octicon-link"></span></a>Radio</h3>
 
 <pre><code>&lt;UI.Radio name="myname" /&gt;
 </code></pre>
@@ -264,26 +412,23 @@ Home
 <pre><code>&lt;UI.Radio disabled /&gt;
 </code></pre>
 
-<h1>
-<a name="notification" class="anchor" href="#notification"><span class="octicon octicon-link"></span></a>Notification</h1>
+<h3>
+<a name="notification" class="anchor" href="#notification"><span class="octicon octicon-link"></span></a>Notification</h3>
 
 <pre><code>&lt;UI.Notification value="10 new Msgs" /&gt;
 </code></pre>
 
-<h1>
-<a name="range" class="anchor" href="#range"><span class="octicon octicon-link"></span></a>Range</h1>
+<h3>
+<a name="range" class="anchor" href="#range"><span class="octicon octicon-link"></span></a>Range</h3>
 
 <pre><code>&lt;UI.Range /&gt;
-</code></pre>
-
-<pre><code>&lt;UI.Range vertical /&gt;
 </code></pre>
 
 <pre><code>&lt;UI.Range disabled /&gt;
 </code></pre>
 
-<h1>
-<a name="icon" class="anchor" href="#icon"><span class="octicon octicon-link"></span></a>Icon</h1>
+<h3>
+<a name="icon" class="anchor" href="#icon"><span class="octicon octicon-link"></span></a>Icon</h3>
 
 <pre><code>&lt;UI.Icon name="circle" /&gt;
 </code></pre>
