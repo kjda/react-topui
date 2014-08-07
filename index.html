@@ -7,6 +7,7 @@
     <meta name="description" content="React-topui : Topcoat components using reactjs">
 
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="bower_components/topcoat/css/topcoat-mobile-dark.css">
 
     <script src="http://fb.me/react-0.11.1.js"></script>
     <script src="http://fb.me/JSXTransformer-0.11.1.js"></script>
@@ -55,13 +56,14 @@
 <a name="button" class="anchor" href="#button"><span class="octicon octicon-link"></span></a>Button</h1>
 
 <p>default</p>
-
-<script type="text/javascript">
-/** @jsx React.DOM */
-React.renderComponent(<ReactTopui.Button />, document.getElementById('#button1'));
-</script>
 <div id="button1">
 </div>
+<script type="text/jsx">
+/** @jsx React.DOM */
+window.onload= function(){
+React.renderComponent(<ReactTopui.Button>Default button</ReactTopui.Button>, document.getElementById('button1'));}
+</script>
+
 <pre><code>&lt;UI.Button&gt;Default button&lt;/UI.Button&gt;
 </code></pre>
 
