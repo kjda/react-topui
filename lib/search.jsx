@@ -6,6 +6,11 @@ module.exports = React.createClass({
 	
 	displayName: 'Search',
 
+	propTypes:{
+		large: React.PropTypes.bool,
+		full: React.PropTypes.bool
+	},
+
 	getDefaultProps: function(){
 		return {
 			large: false,

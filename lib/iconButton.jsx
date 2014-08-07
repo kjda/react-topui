@@ -6,6 +6,12 @@ module.exports = React.createClass({
 	
 	displayName: 'IconButton',
 
+	propTypes:{
+		quiet: React.PropTypes.bool,
+		large: React.PropTypes.bool,
+		full: React.PropTypes.bool
+	},
+
 	getDefaultProps: function(){
 		return {
 			quiet: false,

@@ -5,6 +5,11 @@ module.exports = React.createClass({
 	
 	displayName: 'Radio',
 
+	propTypes:{
+		left: React.PropTypes.bool,
+		right: React.PropTypes.bool
+	},
+
 	getDefaultProps: function(){
 		return {
 			right: false,

@@ -6,6 +6,10 @@ module.exports = React.createClass({
 	
 	displayName: 'TabBarItem',
 
+	propTypes:{
+		full: React.PropTypes.bool
+	},
+
 	getDefaultProps: function(){
 		return {
 			full: false

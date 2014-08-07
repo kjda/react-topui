@@ -6,6 +6,13 @@ module.exports = React.createClass({
 	
 	displayName: 'Button',
 	
+	propTypes:{
+		quiet: React.PropTypes.bool,
+		large: React.PropTypes.bool,
+		cta: React.PropTypes.bool,
+		full: React.PropTypes.bool
+	},
+
 	getDefaultProps: function(){
 		return {
 			quiet: false,

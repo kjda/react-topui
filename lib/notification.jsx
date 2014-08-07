@@ -5,6 +5,10 @@ module.exports = React.createClass({
 	
 	displayName: 'Notification',
 
+	propTypes:{
+		value: React.PropTypes.string.isRequired
+	},
+
 	getDefaultProps: function(){
 		return {
 			value: null

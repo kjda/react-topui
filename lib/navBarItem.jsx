@@ -6,6 +6,14 @@ module.exports = React.createClass({
 	
 	displayName: 'NavBarItem',
 
+	propTypes:{
+		quarter: React.PropTypes.bool,
+		half: React.PropTypes.bool,
+		left: React.PropTypes.bool,
+		right: React.PropTypes.bool,
+		center: React.PropTypes.bool
+	},
+
 	getDefaultProps: function(){
 		return {
 			quarter: false,

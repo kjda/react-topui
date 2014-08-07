@@ -6,17 +6,10 @@ module.exports = React.createClass({
 		
 	displayName: 'Range',
 
-	getDefaultProps: function(){
-		return {
-			vertical: false
-		};
-	},
-
 	render: function(){
 
 		var classSet = ClassSet({
-			'topcoat-range': !this.props.vertical,
-			'topcoat-range-vertical': this.props.vertical
+			'topcoat-range': true
 		});
 		
 		return this.transferPropsTo(

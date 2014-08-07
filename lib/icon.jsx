@@ -5,6 +5,10 @@ module.exports = React.createClass({
 	
 	displayName: 'Icon',
 
+	propTypes:{
+		name: React.PropTypes.string.isRequired
+	},
+
 	render: function(){
 		return this.transferPropsTo( 
 			<span className='icomatic icon'>

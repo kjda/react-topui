@@ -5,6 +5,10 @@ module.exports = React.createClass({
 	
 	displayName: 'Checkbox',
 
+	propTypes:{
+		label: React.PropTypes.string
+	},
+
 	getDefaultProps: function(){
 		return {
 			label: null
