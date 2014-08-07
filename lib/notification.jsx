@@ -1,5 +1,6 @@
 /** @jsx React.DOM */
-var React = require('react/addons');
+var React = require('react');
+
 module.exports = React.createClass({
 	
 	displayName: 'Notification',
@@ -12,7 +13,8 @@ module.exports = React.createClass({
 
 
 	render: function(){
-		return (<span className="topcoat-notification">
+		return (
+			<span className="topcoat-notification">
 			{this.props.value}
 			</span>
 		);

@@ -1,5 +1,7 @@
 /** @jsx React.DOM */
-var React = require('react/addons');
+var React = require('react');
+var ClassSet = require('./classSet');
+
 module.exports = React.createClass({
 	
 	displayName: 'Textarea',
@@ -14,9 +16,9 @@ module.exports = React.createClass({
 
 	render: function(){
 		
-		var classSet = React.addons.classSet({
+		var classSet = ClassSet({
 			'topcoat-textarea': !this.props.large ,
-			'topcoat-textarea--larg': this.props.large,
+			'topcoat-textarea--large': this.props.large,
 			full: this.props.full
 		});
 		

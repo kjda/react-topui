@@ -1,5 +1,7 @@
 /** @jsx React.DOM */
-var React = require('react/addons');
+var React = require('react');
+var ClassSet = require('./classSet');
+
 module.exports = React.createClass({
 	
 	displayName: 'Button',
@@ -16,7 +18,7 @@ module.exports = React.createClass({
 
 	render: function(){
 		
-		var classSet = React.addons.classSet({
+		var classSet = ClassSet({
 			'topcoat-button': !this.props.large && !this.props.cta && !this.props.quiet,
 			'topcoat-button--quiet': this.props.quiet && !this.props.large,
 			'topcoat-button--cta': this.props.cta && !this.props.large,

@@ -1,5 +1,7 @@
 /** @jsx React.DOM */
-var React = require('react/addons');
+var React = require('react');
+var ClassSet = require('./classSet');
+
 module.exports = React.createClass({
 	
 	displayName: 'Search',
@@ -13,9 +15,9 @@ module.exports = React.createClass({
 
 	render: function(){
 		
-		var classSet = React.addons.classSet({
+		var classSet = ClassSet({
 			'topcoat-search-input': !this.props.large ,
-			'topcoat-search-input--larg': this.props.large,
+			'topcoat-search-input--large': this.props.large,
 			full: this.props.full
 		});
 		

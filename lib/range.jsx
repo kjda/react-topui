@@ -1,5 +1,7 @@
 /** @jsx React.DOM */
-var React = require('react/addons');
+var React = require('react');
+var ClassSet = require('./classSet');
+
 module.exports = React.createClass({
 		
 	displayName: 'Range',
@@ -11,12 +13,15 @@ module.exports = React.createClass({
 	},
 
 	render: function(){
-		var classSet = React.addons.classSet({
+
+		var classSet = ClassSet({
 			'topcoat-range': !this.props.vertical,
 			'topcoat-range-vertical': this.props.vertical
 		});
+		
 		return this.transferPropsTo(
 			<input type="range" className={classSet} />
 		);
 	}
+	
 });

@@ -1,5 +1,7 @@
 /** @jsx React.DOM */
-var React = require('react/addons');
+var React = require('react');
+var ClassSet = require('./classSet');
+
 module.exports = React.createClass({
 	
 	displayName: 'TabBarItem',
@@ -12,7 +14,7 @@ module.exports = React.createClass({
 
 	render: function(){
 
-		var classSet = React.addons.classSet({
+		var classSet = ClassSet({
 			'topcoat-tab-bar__button': true,
 			'full': this.props.full
 		});

@@ -1,5 +1,7 @@
 /** @jsx React.DOM */
-var React = require('react/addons');
+var React = require('react');
+var ClassSet = require('./classSet');
+
 module.exports = React.createClass({
 	
 	displayName: 'TextInput',
@@ -14,9 +16,9 @@ module.exports = React.createClass({
 
 	render: function(){
 		
-		var classSet = React.addons.classSet({
+		var classSet = ClassSet({
 			'topcoat-text-input': !this.props.large ,
-			'topcoat-text-input--larg': this.props.large,
+			'topcoat-text-input--large': this.props.large,
 			full: this.props.full
 		});
 		

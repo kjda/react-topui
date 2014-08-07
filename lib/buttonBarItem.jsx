@@ -1,5 +1,7 @@
 /** @jsx React.DOM */
-var React = require('react/addons');
+var React = require('react');
+var ClassSet = require('./classSet');
+
 module.exports = React.createClass({
 	
 	displayName: 'ButtonBarItem',
@@ -13,7 +15,7 @@ module.exports = React.createClass({
 
 	render: function(){
 
-		var classSet = React.addons.classSet({
+		var classSet = ClassSet({
 			'topcoat-button-bar__button': !this.props.large,
 			'topcoat-button-bar__button--large': this.props.large,
 			'full': this.props.full

@@ -1,5 +1,6 @@
 /** @jsx React.DOM */
-var React = require('react/addons');
+var React = require('react');
+
 module.exports = React.createClass({
 	
 	displayName: 'ListContainer',
@@ -7,7 +8,7 @@ module.exports = React.createClass({
 	render: function(){
 		return this.transferPropsTo(
 			<ul className='topcoat-list__container'>
-			{this.props.children}
+				{this.props.children}
 			</ul>
 		);
 	}

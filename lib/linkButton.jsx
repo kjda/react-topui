@@ -1,5 +1,5 @@
 /** @jsx React.DOM */
-var React = require('react/addons');
+var React = require('react');
 var Button = require('./button');
 
 module.exports = React.createClass({
@@ -13,7 +13,10 @@ module.exports = React.createClass({
 
 	render: function(){
 		return this.transferPropsTo(
-			<Button onClick={this.nav}>{this.props.children}</Button>
+			<Button onClick={this.nav}>
+				{this.props.children}
+			</Button>
 		);
 	}
+	
 });

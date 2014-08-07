@@ -1,5 +1,7 @@
 /** @jsx React.DOM */
-var React = require('react/addons');
+var React = require('react');
+var ClassSet = require('./classSet');
+
 module.exports = React.createClass({
 	
 	displayName: 'NavBarItem',
@@ -16,7 +18,7 @@ module.exports = React.createClass({
 
 	render: function(){
 
-		var classSet = React.addons.classSet({
+		var classSet = ClassSet({
 			'topcoat-navigation-bar__item': true,
 			'quarter': this.props.quarter,
 			'half': this.props.half,
