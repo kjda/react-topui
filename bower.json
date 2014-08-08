@@ -1,0 +1,36 @@
+{
+  "name": "react-topui",
+  "main": "dist/index.js",
+  "version": "0.0.2",
+  "homepage": "https://github.com/kjda/react-topui",
+  "authors": [
+    "Khaled Jouda <khaled.jouda@gmail.com>"
+  ],
+  "description": "Topcoat components using ReactJS",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kjda/react-topui.git"
+  },
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "ReactJs",
+    "Topcoat",
+    "UI",
+    "Components"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "react": "^0.11.1"
+  }
+}

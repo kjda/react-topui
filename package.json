@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/kjda/react-topui",
   "dependencies": {
-    
+    "react": "^0.11.1"
   },
   "devDependencies": {
     "jsx-loader": "^0.11.0",
