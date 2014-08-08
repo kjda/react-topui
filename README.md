@@ -8,9 +8,9 @@ Demo & Docs
 
 http://kjda.github.io/react-topui/
 
-Demo App
+Demo Phonegap-App
 ========
-http://kjda.github.io/ReactJs-Phonegap/
+http://kjda.github.io/ReactJs-Phonegap/dieapp/
 
 
 [1]: http://topcoat.io/
