@@ -18,6 +18,7 @@ module.exports = {
 	ListContainer: require('./listContainer.jsx'),
 	ListItem: require('./listItem.jsx'),
 	LinkButton: require('./linkButton.jsx'),
+	Password: require('./password.jsx'),
 	TextInput: require('./textInput.jsx'),
 	Textarea: require('./textarea.jsx'),
 	Switch: require('./switch.jsx'),
